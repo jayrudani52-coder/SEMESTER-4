@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var font=50;
+        function fun(font){
+            document.getElementById("temp").style.fontsize=font+"px";
+        }
+        function inc(){
+            test=setInterval(()=>{if(font<200){
+                fun(++font);
+            }},100)
+        }
+        function dec(){
+            test=setInterval(()=>{if(font>20){
+                fun(--font);
+            }},100)
+        }
+        function stp(){
+            clearInterval(test)
+        }
+    </script>
+</head>
+<body>
+    <h1 id="temp" style="font-size:50px">Hello</h1>
+    <button onclick="inc()">Increase</button>
+    <button onclick="dec()">Decrease</button>
+    <button onclick="stp()">Stop</button>
+</body>
+</html>
+ 

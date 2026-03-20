@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const emp=[{"name":"xyz","age":30},
+                   {"name":"pqr","age":50},
+                   {"name":"mno","age":45}]
+
+        const e=emp.sort(
+            (a,b)=>b.age-a.age
+        )
+
+        for(i of e){
+            console.log(i.name+" "+i.age);
+        }
+
+        console.log(
+            Math.max(...emp.map(e=>e.age)))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

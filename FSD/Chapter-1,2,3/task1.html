@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var data={
+            name:"ABC", //string
+            age:20, //number
+            marks:{fsd2:20,python2:15}, //object
+            friends:["xyz","pqr","mno"], //array
+            test:[{test1:"x",test2:20},{test3:"y"}],
+            test4:true, //boolean
+        }
+        console.log(data.age);
+        document.write(data["age"]);
+        document.write(data.name);
+        document.write(data.marks.python2);
+        document.write(data.friends[1]);
+        document.writel(data.test[0].test2);
+
+        var d1=JSON.stringify(data);
+        document.write(d1);
+        document.write("<h1>"+d1.name+"<h1>");
+
+        var data1='{"name":"ABC","age":20}'
+        document.write(data1);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

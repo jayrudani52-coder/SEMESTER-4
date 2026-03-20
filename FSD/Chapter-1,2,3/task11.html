@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        setInterval(myfun,1000);
+        let x=3
+        let y=2;
+        function myfun(){
+            document.getElementById("temp").innerHTML=++x + ++y;
+        }
+    </script>
+<body>
+    <h1 id="temp"></h1>
+</body>
+</html>
