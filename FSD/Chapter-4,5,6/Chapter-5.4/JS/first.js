@@ -1,0 +1,10 @@
+var express=require("express");
+var app=express();
+var path=require("path");
+var hp=path.join(__dirname,"../HTML");
+var cp=path.join(__dirname,"../CSS");
+var ip=path.join(__dirname,"../IMAGES");
+app.use(express.static(cp));
+app.use(express.static(ip));
+app.use(express.static(hp,{index:"my.html"}));
+app.listen(8009);
