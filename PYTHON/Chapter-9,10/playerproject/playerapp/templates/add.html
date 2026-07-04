@@ -1,0 +1,8 @@
+<h1>Add Player</h1>
+<form method="POST">
+    {% csrf_token %}
+    <input type="text" placeholder="Name" name="name"><br>
+    <input type="text" placeholder="Test Innings" name="innings"><br>
+    <input type="text" placeholder="Runs" name="runs"><br>
+    <button type="submit">Add Player</button>
+</form>

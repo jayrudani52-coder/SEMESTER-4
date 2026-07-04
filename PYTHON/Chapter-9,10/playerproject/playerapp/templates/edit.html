@@ -1,0 +1,8 @@
+<h1>Edit Player</h1>
+<form method="POST">
+    {% csrf_token %}
+    <input type="text" placeholder="Name" name="name" value="{{ player.name|default:'' }}"><br>
+    <input type="text" placeholder="Test Innings" name="test_innings" value="{{ player.test_innings|default:'' }}"><br>
+    <input type="text" placeholder="Runs" name="runs" value="{{ player.runs|default:'' }}"><br>
+    <button type="submit">Update Player</button>
+</form>

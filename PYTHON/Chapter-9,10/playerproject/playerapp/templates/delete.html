@@ -1,0 +1,11 @@
+<h1>Delete Player</h1>
+
+{% if player %}
+    <p>Are you sure you want to delete {{ player.name }}?</p>
+    <form method="POST">
+        {% csrf_token %}
+        <button type="submit">Confirm Delete</button>
+    </form>
+{% else %}
+    <p>Player not found.</p>
+{% endif %}
